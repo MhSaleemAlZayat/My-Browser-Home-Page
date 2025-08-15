@@ -4,7 +4,7 @@ const categories = [
   {
     id: "learning",
     name: "Learning",
-    isExpanded: false,
+    isExpanded: true,
     websites: [
       {
         id: "1",
