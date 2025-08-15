@@ -36,6 +36,49 @@ const categories = [
       }
     ]
   },
+  // Code Developement & Collaboration
+  {
+    id: "development",
+    name: "Code Developement & Collaboration",
+    isExpanded: true,
+    websites: [
+      {
+        id: "1",
+        name: "GitHub",
+        url: "https://github.com/",
+        icon: "imgs/github-logo.png",
+        description: "Largest platform for code hosting and collaboration."
+      },
+      {
+        id: "2",
+        name: "GitLab",
+        url: "https://gitlab.com/",
+        icon: "imgs/gitlab-logo.png",
+        description: "Git-based repository management with CI/CD built in"
+      },
+      {
+        id: "3",
+        name: "Bitbucket",
+        url: "https://bitbucket.org/",
+        icon: "imgs/bitbucket-logo.png",
+        description: "Git repository hosting service with built-in CI/CD"
+      },
+      {
+        id: "4",
+        name: "Azure DevOps",
+        url: "https://portal.azure.com/#home",
+        icon: "imgs/azure-logo.png",
+        description: "Online code editor and sandbox for web development."
+      },
+      {
+        id: "5",
+        name: "AWS CodeSpaces",
+        url: "https://console.aws.amazon.com/iam/home",
+        icon: "imgs/aws-logo.png",
+        description: "Online code editor and sandbox for web development."
+      },
+    ]
+  },
   //AI
   {
     id: "ai",
