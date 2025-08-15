@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="header-title">Your Favorite Sites, Organized</h1>
+                    <p class="header-subtitle">Quick access to all your important websites, neatly categorized</p>
+                </div>
+                <button id="addCollectionBtn" class="btn btn-primary">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add New Collection
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div id="categoriesContainer" class="categories-container">
+                <!-- Categories will be dynamically generated here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Add Site Modal -->
+    <div id="addSiteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New Website</h2>
+                <p class="modal-description">Add a new website to your collection. Choose a category to organize it properly.</p>
+                <button class="modal-close" id="closeSiteModal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="addSiteForm" class="modal-form">
+                <div class="form-group">
+                    <label for="siteName">Website Name</label>
+                    <input type="text" id="siteName" placeholder="e.g., Google" required>
+                </div>
+                <div class="form-group">
+                    <label for="siteUrl">Website URL</label>
+                    <input type="text" id="siteUrl" placeholder="e.g., google.com or https://google.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="siteCategory">Category</label>
+                    <select id="siteCategory" required>
+                        <option value="">Select a category</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="siteDescription">Description (Optional)</label>
+                    <textarea id="siteDescription" placeholder="Brief description of the website" rows="3"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelSiteBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Website</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Collection Modal -->
+    <div id="addCollectionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New Collection</h2>
+                <p class="modal-description">Create a new category to organize your websites.</p>
+                <button class="modal-close" id="closeCollectionModal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="addCollectionForm" class="modal-form">
+                <div class="form-group">
+                    <label for="collectionName">Collection Name</label>
+                    <input type="text" id="collectionName" placeholder="e.g., Work Tools" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelCollectionBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Create Collection</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
