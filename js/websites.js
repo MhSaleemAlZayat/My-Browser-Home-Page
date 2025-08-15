@@ -165,6 +165,13 @@ const categories = [
         description: "AI chatbot by Google"
       },
       {
+        id: "1",
+        name: "DeepWiki",  
+        url: "https://deepwiki.com/",
+        icon: "imgs/generic-website-icon.png",
+        description: "DeepWiki provides up-to-date documentation you can talk to, for every repo in the world. Think Deep Research for GitHub."
+      },
+      {
         id: "2",
         name: "DALL-E",
         url: "https://openai.com/dall-e-2/",
