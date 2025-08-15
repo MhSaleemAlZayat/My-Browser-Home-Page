@@ -28,6 +28,27 @@ const categories = [
         description: "Online courses"
       },
       {
+         id: "1",
+        name: "LeetCode",
+        url: "https://leetcode.com/",
+        icon: "imgs/leetcode-logo.png",
+        description: "Free coding tutorials"
+      },
+      {
+        id: "1",
+        name: "FreeCodeCamp",
+        url: "https://www.freecodecamp.org/",
+        icon: "imgs/freecodecamp-logo.png",
+        description: "Free coding tutorials"
+      },
+      {
+        id: "1",
+        name: "Coursera",
+        url: "https://www.coursera.org/",
+        icon: "imgs/coursera-logo.png",
+        description: "Online courses from universities"
+      },
+      {
         id: "1",
         name: "Khan Academy",
         url: "https://khanacademy.org",
@@ -77,6 +98,36 @@ const categories = [
         icon: "imgs/aws-logo.png",
         description: "Online code editor and sandbox for web development."
       },
+    ]
+  },
+  //Developement Communities
+  {
+    id: "communities",
+    name: "Developement Communities",
+    isExpanded: true,
+    websites: [
+      {
+        id: "1",
+        name: "Stack Overflow",
+        url: "https://stackoverflow.com/",
+        icon: "imgs/stackoverflow-logo.png",
+        description: "Community-driven Q&A platform for developers."
+      },
+      {
+        id: "2",
+        name: "CodeSandbox",
+        url: "https://codesandbox.io/",
+        icon: "imgs/codesandbox-logo.png",
+        description: "Online code editor and sandbox for web development."
+      },
+      {
+        id: "3",
+        name: "CodePen",
+        url: "https://codepen.io/",
+        icon: "imgs/codepen-logo.png",
+        description: "Online code editor and social development environment."
+      },
+      
     ]
   },
   //AI
